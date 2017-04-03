@@ -9,12 +9,35 @@ export class Post extends React.Component {
 
     this.state = {
       liked: post.liked,
+      heartAnimations: [],
     };
   }
 
   handleLike() {
+    if (!this.state.liked) this.showHeartAnimation();
     this.setState({
       liked: !this.state.liked,
+    });
+  }
+
+  showHeartAnimation() {
+    const id = (+(new Date())).toString();
+
+    let heartAnimations = this.state.heartAnimations;
+    heartAnimations.push(<i className="fa fa-heart" key={id}></i>);
+
+    this.setState({
+      heartAnimations: heartAnimations,
+    });
+
+    setTimeout(this.hideHeartAnimation.bind(this, id), 500);
+  }
+
+  hideHeartAnimation(id) {
+    this.setState({
+      heartAnimations: this.state.heartAnimations.filter(element => {
+        return element.key !== id;
+      }),
     });
   }
 
@@ -38,6 +61,7 @@ export class Post extends React.Component {
          </div>
 
          <div className="col-xs-12 image">
+           { this.state.heartAnimations }
            <img src={post.imageUrl} onClick={this.handleLike.bind(this)} />
          </div>
 
