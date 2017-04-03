@@ -1,5 +1,6 @@
 import React from 'react';
 import './Post.css';
+import Hammer from 'react-hammerjs';
 
 export class Post extends React.Component {
   constructor(props) {
@@ -62,7 +63,9 @@ export class Post extends React.Component {
 
          <div className="col-xs-12 image">
            { this.state.heartAnimations }
-           <img src={post.imageUrl} onDoubleClick={this.handleLike.bind(this)} />
+           <Hammer onDoubleTap={this.handleLike.bind(this)}>
+             <img src={post.imageUrl} />
+           </Hammer>
          </div>
 
          <div className="col-xs-12 controls">
