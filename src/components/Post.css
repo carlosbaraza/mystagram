@@ -1,0 +1,38 @@
+/* Post */
+.post {
+  margin-bottom: 30px;
+}
+
+/* Post Header */
+.post .header img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Post Image */
+.post .image {
+  padding: 0;
+}
+.post .image img {
+  width: 100%;
+}
+
+/* Post Controls */
+.post .controls {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.post .controls i {
+  margin: 10px;
+  font-size: 1.7em;
+}
+.post .controls i.fa-heart {
+  color: red;
+}
+
+/* Post Likes */
+.post .likes {
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+}
