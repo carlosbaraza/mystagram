@@ -1,0 +1,14 @@
+.navbar-header {
+  display: flex;
+  width: 100%;
+}
+.navbar-header .navbar-brand {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  margin: auto !important;
+  border-bottom: 3px solid black;
+}
+.navbar-header button {
+  background: none;
+  border: none;
+  width: 4em;
+}
