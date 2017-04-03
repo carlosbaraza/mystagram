@@ -62,11 +62,11 @@ export class Post extends React.Component {
 
          <div className="col-xs-12 image">
            { this.state.heartAnimations }
-           <img src={post.imageUrl} onClick={this.handleLike.bind(this)} />
+           <img src={post.imageUrl} onDoubleClick={this.handleLike.bind(this)} />
          </div>
 
          <div className="col-xs-12 controls">
-           <i className={heartClass}></i>
+           <i className={heartClass} onClick={this.handleLike.bind(this)}></i>
            <i className="fa fa-comment-o"></i>
            <i className="fa fa-paper-plane-o"></i>
            <i className="fa fa-bookmark-o pull-right"></i>
