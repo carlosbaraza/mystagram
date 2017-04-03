@@ -8,7 +8,7 @@ export class BottomBar extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-xs-12">
-              <button type="button">
+              <button type="button" className="active">
                 <i className="fa fa-home"></i>
               </button>
               <button type="button">

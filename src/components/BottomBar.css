@@ -17,4 +17,8 @@
   width: 4em;
   height: 50px;
   flex-grow: 1;
+  color: rgba(200, 200, 200, 1);
+}
+.bottom-bar button.active {
+  color: inherit;
 }
