@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar } from './components/Navbar';
+import { BottomBar } from './components/BottomBar';
 import { Post } from './components/Post';
 
 const posts = [
@@ -37,6 +38,8 @@ class App extends Component {
         <div className="container">
           { this.renderPosts() }
         </div>
+
+        <BottomBar />
       </div>
     );
   }
