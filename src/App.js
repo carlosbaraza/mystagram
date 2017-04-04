@@ -5,20 +5,21 @@ import { Post } from './components/Post';
 
 const posts = [
   {
-    userName: 'Carlos',
-    userImage: 'http://www.gravatar.com/avatar/d5c3fc3569c74e38843ea47094ed551d?s=250&d=mm&r=x',
-    imageUrl: 'http://blog.talentrocket.co.uk/wp-content/uploads/2014/08/instagram-crop.jpg',
-    likes: 159,
+    userName: "Kittenlove",
+    userImage: "https://img.emc.gs/25afa513330b0e191d35e2b66e3367912c500b2d/687474703a2f2f696d6775722e636f6d2f556473727152432e6a7067/",
+    imageUrl: "https://assets.rbl.ms/9241419/980x.jpg",
+    likes: 257,
     liked: true,
   },
   {
-    userName: 'Esther',
-    userImage: 'http://shareda.buzz/wp-content/uploads/2016/03/instashit.jpg',
-    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/60/cf/db/60cfdb96744a9cc380f96b23b1d7550d.jpg',
-    likes: 230,
+    userName: "Birdies",
+    userImage: "https://s-media-cache-ak0.pinimg.com/originals/0e/16/51/0e1651ac67fa9fbd04ff08508b064cb5.jpg",
+    imageUrl: "http://d2fbmjy3x0sdua.cloudfront.net/cdn/farfuture/xX2dO2IN71t0tfGOITDQ0HSLNOml6xiRu_z3MU6Xx5M/mtime:1486669862/sites/default/files/styles/engagement_card/public/sfw_apa_2013_28342_232388_briankushner_blue_jay_kk_high.jpg?itok=ttMfUhUu",
+    likes: 240601,
     liked: false,
-  },
+  }
 ];
+
 
 class App extends Component {
   renderPosts() {
