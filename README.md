@@ -6,6 +6,9 @@ course. This is an introductory course for interns at HomeAway.
   <img src="./docs/screenshot.png" alt="Mystagram screenshot"/>
 </p>
 
+## Tutorial Index
+1. [Chapter 1: Mystagram](./tutorial/CHAPTER1.md)
+
 ## Run the development environment
 ```
 npm run start
